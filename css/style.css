@@ -14,6 +14,10 @@
   --lightgray: #F6F6F6;
   --gray: #778591;
   --darkgray: #616161;
+  --h1: clamp(0.875rem, -1.7813rem + 8.5vw, 3rem);
+  --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
+  --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+  --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +60,7 @@ html {
 }
 .header .navbar a {
   margin-left: 2rem;
-  font-size: 18px;
+  font-size: var(--a);
   color: var(--black);
   text-decoration: none;
   transition: 0.5s ease;
@@ -66,7 +70,7 @@ html {
 }
 .header #menu-btn {
   display: none;
-  font-size: 18px;
+  font-size: var(--a);
   color: var(--black);
   cursor: pointer;
 }
@@ -140,11 +144,11 @@ html {
 }
 .cover .cover-desc h1 {
   color: var(--white);
-  font-size: 48px;
+  font-size: var(--h1);
   font-weight: 800;
 }
 .cover .cover-desc p {
-  font-size: 18px;
+  font-size: var(--p);
   color: var(--white);
   margin-bottom: 1.5rem;
 }
@@ -153,6 +157,7 @@ html {
   border-radius: 5px;
   background-color: var(--red);
   color: var(--white);
+  font-size: var(--a);
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -164,15 +169,6 @@ html {
   .cover {
     height: 100vh;
     padding: 15rem 1rem;
-  }
-  .cover .cover-desc h1 {
-    font-size: xx-large;
-  }
-  .cover .cover-desc p {
-    font-size: large;
-  }
-  .cover .cover-desc a {
-    font-size: small;
   }
 }
 .about {
@@ -188,16 +184,17 @@ html {
   margin-left: 2rem;
 }
 .about .about-desc h1 {
+  font-size: var(--h1);
   color: var(--black);
-  font-size: 48px;
   font-weight: 800;
 }
 .about .about-desc p {
-  font-size: 18px;
+  font-size: var(--p);
   color: var(--black);
   margin-bottom: 1.5rem;
 }
 .about .about-desc a {
+  font-size: var(--a);
   padding: 12px 34px;
   border-radius: 5px;
   background-color: var(--red);
@@ -221,15 +218,6 @@ html {
     margin: 2rem 0;
     text-align: center;
   }
-  .about .about-desc h1 {
-    font-size: xx-large;
-  }
-  .about .about-desc p {
-    font-size: medium;
-  }
-  .about .about-desc a {
-    font-size: small;
-  }
 }
 .history {
   display: flex;
@@ -246,11 +234,11 @@ html {
 }
 .history .history-desc h1 {
   color: var(--black);
-  font-size: 48px;
+  font-size: var(--h1);
   font-weight: 800;
 }
 .history .history-desc p {
-  font-size: 18px;
+  font-size: var(--p);
   color: var(--black);
   margin-bottom: 1.5rem;
 }
@@ -259,6 +247,7 @@ html {
   border-radius: 5px;
   background-color: var(--red);
   color: var(--white);
+  font-size: var(--a);
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -281,15 +270,6 @@ html {
     margin: 2rem 0;
     text-align: center;
   }
-  .history .history-desc h1 {
-    font-size: xx-large;
-  }
-  .history .history-desc p {
-    font-size: medium;
-  }
-  .history .history-desc a {
-    font-size: small;
-  }
   .history .order {
     order: 1;
   }
@@ -308,11 +288,11 @@ html {
 }
 .contact .contact-desc h1 {
   color: var(--black);
-  font-size: 48px;
+  font-size: var(--h1);
   font-weight: 800;
 }
 .contact .contact-desc .form-label {
-  font-size: 18px;
+  font-size: var(--a);
   margin: 1rem 0;
 }
 .contact .contact-desc textarea {
@@ -323,6 +303,7 @@ html {
   border-radius: 5px;
   background-color: var(--red);
   color: var(--white);
+  font-size: var(--a);
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -345,15 +326,6 @@ html {
     margin: 2rem 0;
     text-align: left;
   }
-  .contact .contact-desc h1 {
-    font-size: xx-large;
-  }
-  .contact .contact-desc p {
-    font-size: medium;
-  }
-  .contact .contact-desc a {
-    font-size: small;
-  }
   .contact .order {
     order: 1;
   }
@@ -367,7 +339,7 @@ html {
 }
 .footer .footer-desc .footer-about p {
   color: var(--black);
-  font-size: 18px;
+  font-size: var(--a);
   line-height: 1.5rem;
   width: 25%;
 }
@@ -377,7 +349,7 @@ html {
 .footer .footer-desc .footer-links h2 {
   color: var(--black);
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--h2);
   text-transform: uppercase;
 }
 .footer .footer-desc .footer-links hr {
@@ -386,7 +358,7 @@ html {
 .footer .footer-desc .footer-links a {
   text-decoration: none;
   color: var(--black);
-  font-size: 16px;
+  font-size: var(--a);
   display: block;
   line-height: 2rem;
   transition: 0.5s ease;
@@ -400,7 +372,7 @@ html {
 .footer .footer-desc .footer-contact h2 {
   color: var(--black);
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--h2);
   text-transform: uppercase;
 }
 .footer .footer-desc .footer-contact hr {
@@ -410,7 +382,7 @@ html {
   width: 20rem;
   text-decoration: none;
   color: var(--black);
-  font-size: 16px;
+  font-size: var(--a);
   display: block;
   line-height: 2rem;
   cursor: pointer;
@@ -430,7 +402,7 @@ html {
 }
 .footer .footer-desc .foot p {
   color: var(--black);
-  font-size: 16px;
+  font-size: var(--a);
 }
 .footer .footer-desc .foot a {
   color: var(--black);
@@ -450,32 +422,11 @@ html {
   .footer .footer-desc .footer-about {
     padding: 2rem 1rem;
   }
-  .footer .footer-desc .footer-about p {
-    font-size: small;
-  }
   .footer .footer-desc .footer-links {
     margin-left: 3rem;
   }
-  .footer .footer-desc .footer-links h2 {
-    font-size: x-large;
-  }
-  .footer .footer-desc .footer-links a {
-    font-size: small;
-  }
   .footer .footer-desc .footer-contact {
     margin-left: 3rem;
-  }
-  .footer .footer-desc .footer-contact h2 {
-    font-size: x-large;
-  }
-  .footer .footer-desc .footer-contact p {
-    font-size: small;
-  }
-  .footer .footer-desc .foot p {
-    font-size: small;
-  }
-  .footer .footer-desc .foot a {
-    font-size: small;
   }
 }
 @media (max-width: 500px) {
@@ -491,30 +442,14 @@ html {
   .footer .footer-desc .footer-links {
     margin: 2rem 0;
   }
-  .footer .footer-desc .footer-links h2 {
-    font-size: xx-large;
-  }
-  .footer .footer-desc .footer-links a {
-    font-size: medium;
-  }
   .footer .footer-desc .footer-contact {
     margin-left: 0;
   }
-  .footer .footer-desc .footer-contact h2 {
-    font-size: xx-large;
-  }
-  .footer .footer-desc .footer-contact p {
-    font-size: medium;
-  }
-  .footer .footer-desc .foot {
+  .footer .foot {
     display: block;
     text-align: center;
   }
-  .footer .footer-desc .foot p {
-    font-size: medium;
+  .footer .foot p {
     margin-bottom: 2rem;
-  }
-  .footer .footer-desc .foot a {
-    font-size: medium;
   }
 }

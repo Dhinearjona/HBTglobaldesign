@@ -14,6 +14,11 @@
     --lightgray: #F6F6F6;
     --gray: #778591;
     --darkgray: #616161;
+
+    --h1: clamp(0.875rem, -1.7813rem + 8.5vw, 3rem);
+    --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
+    --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
+    --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
 }
 
 ::-webkit-scrollbar {
@@ -60,7 +65,7 @@ html {
 
         a {
             margin-left: 2rem;
-            font-size: 18px;
+            font-size: var(--a);
             color: var(--black);
             text-decoration: none;
             transition: 0.5s ease;
@@ -73,7 +78,7 @@ html {
 
     #menu-btn {
         display: none;
-        font-size: 18px;
+        font-size: var(--a);
         color: var(--black);
         cursor: pointer;
     }
@@ -172,12 +177,12 @@ html {
 
         h1 {
             color: var(--white);
-            font-size: 48px;
+            font-size: var(--h1);
             font-weight: 800;
         }
 
         p {
-            font-size: 18px;
+            font-size: var(--p);
             color: var(--white);
             margin-bottom: 1.5rem;
         }
@@ -187,6 +192,7 @@ html {
             border-radius: 5px;
             background-color: var(--red);
             color: var(--white);
+            font-size: var(--a);
             text-decoration: none;
             transition: 0.5s ease;
         }
@@ -201,21 +207,6 @@ html {
     .cover {
         height: 100vh;
         padding: 15rem 1rem;
-
-        .cover-desc {
-
-            h1 {
-                font-size: xx-large;
-            }
-
-            p {
-                font-size: large;
-            }
-
-            a {
-                font-size: small;
-            }
-        }
     }
 }
 
@@ -236,18 +227,19 @@ html {
         margin-left: 2rem;
 
         h1 {
+            font-size: var(--h1);
             color: var(--black);
-            font-size: 48px;
             font-weight: 800;
         }
 
         p {
-            font-size: 18px;
+            font-size: var(--p);
             color: var(--black);
             margin-bottom: 1.5rem;
         }
 
         a {
+            font-size: var(--a);
             padding: 12px 34px;
             border-radius: 5px;
             background-color: var(--red);
@@ -277,18 +269,6 @@ html {
         .about-desc {
             margin: 2rem 0;
             text-align: center;
-
-            h1 {
-                font-size: xx-large;
-            }
-
-            p {
-                font-size: medium;
-            }
-
-            a {
-                font-size: small;
-            }
         }
     }
 }
@@ -312,12 +292,12 @@ html {
 
         h1 {
             color: var(--black);
-            font-size: 48px;
+            font-size: var(--h1);
             font-weight: 800;
         }
 
         p {
-            font-size: 18px;
+            font-size: var(--p);
             color: var(--black);
             margin-bottom: 1.5rem;
         }
@@ -327,6 +307,7 @@ html {
             border-radius: 5px;
             background-color: var(--red);
             color: var(--white);
+            font-size: var(--a);
             text-decoration: none;
             transition: 0.5s ease;
         }
@@ -356,18 +337,6 @@ html {
         .history-desc {
             margin: 2rem 0;
             text-align: center;
-
-            h1 {
-                font-size: xx-large;
-            }
-
-            p {
-                font-size: medium;
-            }
-
-            a {
-                font-size: small;
-            }
         }
 
         .order {
@@ -394,12 +363,12 @@ html {
 
         h1 {
             color: var(--black);
-            font-size: 48px;
+            font-size: var(--h1);
             font-weight: 800;
         }
 
         .form-label {
-            font-size: 18px;
+            font-size: var(--a);
             margin: 1rem 0;
         }
 
@@ -412,6 +381,7 @@ html {
             border-radius: 5px;
             background-color: var(--red);
             color: var(--white);
+            font-size: var(--a);
             text-decoration: none;
             transition: 0.5s ease;
         }
@@ -441,18 +411,6 @@ html {
         .contact-desc {
             margin: 2rem 0;
             text-align: left;
-
-            h1 {
-                font-size: xx-large;
-            }
-
-            p {
-                font-size: medium;
-            }
-
-            a {
-                font-size: small;
-            }
         }
 
         .order {
@@ -474,7 +432,7 @@ html {
     
             p {
                 color: var(--black);
-                font-size: 18px;
+                font-size: var(--a);
                 line-height: 1.5rem;
                 width: 25%;
             }
@@ -486,7 +444,7 @@ html {
             h2 {
                 color: var(--black);
                 font-weight: 700;
-                font-size: 36px;
+                font-size: var(--h2);
                 text-transform: uppercase;
             }
     
@@ -497,7 +455,7 @@ html {
             a {
                 text-decoration: none;
                 color: var(--black);
-                font-size: 16px;
+                font-size: var(--a);
                 display: block;
                 line-height: 2rem;
                 transition: 0.5s ease;
@@ -514,7 +472,7 @@ html {
             h2 {
                 color: var(--black);
                 font-weight: 700;
-                font-size: 36px;
+                font-size: var(--h2);
                 text-transform: uppercase;
             }
     
@@ -526,7 +484,7 @@ html {
                 width: 20rem;
                 text-decoration: none;
                 color: var(--black);
-                font-size: 16px;
+                font-size: var(--a);
                 display: block;
                 line-height: 2rem;
                 cursor: pointer;
@@ -550,7 +508,7 @@ html {
 
             p {
                 color: var(--black);
-                font-size: 16px;
+                font-size: var(--a);
             }
 
             a {
@@ -582,45 +540,14 @@ html {
 
             .footer-about {
                 padding: 2rem 1rem;
-
-                p {
-                    font-size: small;
-                }
             }
 
             .footer-links {
                 margin-left: 3rem;
-
-                h2 {
-                    font-size: x-large;
-                }
-
-                a {
-                    font-size: small;
-                }
             }
 
             .footer-contact {
                 margin-left: 3rem;
-
-                h2 {
-                    font-size: x-large;
-                }
-
-                p {
-                    font-size: small;
-                }
-            }
-
-            .foot {
-
-                p {
-                    font-size: small;
-                }
-
-                a {
-                    font-size: small;
-                }
             }
         }
     }
@@ -644,25 +571,10 @@ html {
 
             .footer-links {
                 margin: 2rem 0;
-
-                h2 {
-                    font-size: xx-large;
-                }
-
-                a {
-                    font-size: medium;
-                }
             }
 
             .footer-contact {
                 margin-left: 0;
-
-                h2 {
-                    font-size: xx-large;
-                }
-
-                p {
-                    font-size: medium;
                 }
             }
 
@@ -671,14 +583,8 @@ html {
                 text-align: center;
     
                 p {
-                    font-size: medium;
                     margin-bottom: 2rem;
-                }
-
-                a {
-                    font-size: medium;
                 }
             }
         }
     }
-}
