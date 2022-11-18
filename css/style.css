@@ -179,6 +179,8 @@ html {
 }
 .about .about-img img {
   width: 40rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .about .about-desc {
   margin-left: 2rem;
@@ -188,10 +190,12 @@ html {
   color: var(--black);
   font-weight: 800;
 }
+.about .about-desc li {
+  text-align: left;
+  font-size: var(--a);
+}
 .about .about-desc p {
-  font-size: var(--p);
-  color: var(--black);
-  margin-bottom: 1.5rem;
+  margin: 2rem 0;
 }
 .about .about-desc a {
   font-size: var(--a);
@@ -228,6 +232,8 @@ html {
 }
 .history .history-img img {
   width: 40rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .history .history-desc {
   margin-left: 2rem;
@@ -282,6 +288,8 @@ html {
 }
 .contact .contact-img img {
   width: 40rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .contact .contact-desc {
   margin-left: 2rem;

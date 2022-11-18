@@ -220,6 +220,8 @@ html {
 
         img {
             width: 40rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
     
@@ -232,10 +234,13 @@ html {
             font-weight: 800;
         }
 
+        li {
+            text-align: left;
+            font-size: var(--a);
+        }
+
         p {
-            font-size: var(--p);
-            color: var(--black);
-            margin-bottom: 1.5rem;
+            margin: 2rem 0;
         }
 
         a {
@@ -284,6 +289,8 @@ html {
 
         img {
             width: 40rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
     
@@ -355,6 +362,8 @@ html {
 
         img {
             width: 40rem;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
     }
     
