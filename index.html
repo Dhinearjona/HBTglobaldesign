@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Home - Charm HBT Global Design</title>
@@ -28,7 +29,7 @@
     </header>
 
     <div class="cover">
-        <div class="cover-desc">
+        <div class="cover-desc" data-aos="zoom-in-up">
             <h1>Find your Dream Walls</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
             <a href="contact.html">Contact Us</a>
@@ -36,7 +37,7 @@
     </div>
 
     <div class="about">
-        <div class="about-img" data-aos="fade-right" >
+        <div class="about-img" data-aos="zoom-in-up" >
             <img src="img/img1.jpg"/>
         </div>
         <div class="about-desc order" data-aos="fade-left">
@@ -59,10 +60,10 @@
     </div>
 
     <div class="history">
-        <div class="history-img" data-aos="fade-right">
+        <div class="history-img" data-aos="zoom-in-up">
             <img src="img/img2.jpeg" />
         </div>
-        <div class="history-desc order" data-aos="fade-left">
+        <div class="history-desc order" data-aos="zoom-in-up">
             <h1>A Journey in Style</h1>
             <p>At Austral Bricks, we understand that building a new home is a lifetime experience. The realisation of a dream, a union of your ideas, an expression of your style. We are dedicated to building the most exciting homes in Australia and have the largest range of brick finishes and colours for you to select from. <br><br>With enduring style, energy saving efficiency, and everlasting strength, a home built with Austral Bricks is a place to live, love, and be you.</p>
             <a href="#">Learn More</a>
@@ -131,6 +132,10 @@
     </div>
 </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
