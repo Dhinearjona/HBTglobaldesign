@@ -99,6 +99,7 @@ html {
   }
   .header #menu-btn {
     display: inline-block;
+    font-size: var(--p);
   }
   .header #menu-btn.fa-times {
     transform: rotate(180deg);
@@ -184,6 +185,7 @@ html {
 }
 .about .about-desc {
   margin-left: 2rem;
+  line-height: 15px;
 }
 .about .about-desc h1 {
   font-size: var(--h1);
@@ -223,6 +225,11 @@ html {
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .about .about-desc li {
+    padding: 0 1rem;
+  }
+}
 .history {
   display: flex;
   justify-content: space-between;
@@ -236,7 +243,7 @@ html {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .history .history-desc {
-  margin-left: 2rem;
+  margin: 0 1.5rem;
 }
 .history .history-desc h1 {
   color: var(--black);
