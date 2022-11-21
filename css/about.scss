@@ -168,8 +168,10 @@ html {
 }
 
 .about {
-    padding: 3rem 5%;
+    height: 100vh;
+    padding: 0 5%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
     .about-img {
@@ -177,15 +179,20 @@ html {
         img {
             width: 20rem;
             border-radius: 10px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         }
     }
 
     .about-desc {
         margin-left: 2rem;
 
+        h1 {
+            font-size: var(--h1);
+            font-weight: 800;
+            color: var(--red);
+        }
+
         p {
-            font-size: var(--p);
+            font-size: var(--h5);
             margin: 0;
         }
 
@@ -197,9 +204,10 @@ html {
 
 @media (max-width: 800px) {
     .about {
+        height: 100%;
         display: block;
         text-align: center;
-        padding: 3rem 1rem;
+        padding: 3rem 2rem;
 
         .about-img {
 

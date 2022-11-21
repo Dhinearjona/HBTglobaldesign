@@ -288,10 +288,99 @@ html {
     order: 1;
   }
 }
+.project {
+  height: 100vh;
+  padding: 3rem 5%;
+}
+.project .project-title {
+  text-align: center;
+}
+.project .project-title h1 {
+  font-size: var(--h1);
+  font-weight: 800;
+  color: var(--red);
+}
+.project .project-title p {
+  font-size: var(--p);
+}
+.project .project-card {
+  margin-top: 3rem;
+}
+.project .project-card .row .column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project .project-card .row .column .card {
+  width: 20rem;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.project .project-card .row .column .card img {
+  width: 100%;
+}
+.project .project-card .row .column .card h3 {
+  font-size: var(--h3);
+  margin-top: 1rem;
+  font-weight: 800;
+}
+.project .project-card .row .column .card a {
+  font-size: var(--a);
+  background-color: var(--red);
+  border-radius: 10px;
+  padding: 12px 34px;
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.5s ease;
+}
+.project .project-card .row .column .card a:hover {
+  background-color: var(--black);
+}
+.project .project-card .row .btnLearn {
+  text-align: center;
+  margin-top: 2rem;
+}
+.project .project-card .row .btnLearn a {
+  font-size: var(--a);
+  background-color: var(--red);
+  border-radius: 10px;
+  padding: 12px 34px;
+  text-decoration: none;
+  color: var(--white);
+  transition: 0.5s ease;
+}
+.project .project-card .row .btnLearn a:hover {
+  background-color: var(--black);
+}
+
+@media (max-width: 800px) and (min-width: 501px) {
+  .project {
+    padding: 1rem 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .project {
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+  .project .project-card .row {
+    justify-content: center;
+    align-items: center;
+  }
+  .project .project-card .row .column {
+    display: contents;
+  }
+  .project .project-card .row .column .card {
+    margin: 1rem 0;
+  }
+}
 .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: var(--lightgray);
   padding: 3rem 5%;
 }
 .contact .contact-img img {
