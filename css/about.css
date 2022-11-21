@@ -166,6 +166,9 @@ html {
     margin: 2rem 0;
     border-radius: 30px;
   }
+  .about .about-desc {
+    margin: 0;
+  }
 }
 .footer .footer-desc .footer-about {
   height: 270px;
