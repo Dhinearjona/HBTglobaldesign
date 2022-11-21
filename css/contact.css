@@ -218,7 +218,19 @@ html {
   .contact .contact-flex .contact-side .contact-quote,
 .contact .contact-flex .contact-side .contact-info,
 .contact .contact-flex .contact-side .social-media {
-    margin: 1rem 0;
+    margin: 1rem 0.1rem;
+  }
+  .contact .contact-flex .contact-side .contact-quote h1 {
+    text-align: center;
+  }
+  .contact .contact-flex .contact-side .contact-quote p {
+    text-align: center;
+  }
+  .contact .contact-flex .contact-side .contact-quote .social-media {
+    margin: 0 3.5rem;
+  }
+  .contact .contact-form {
+    padding: 1.5rem 1.5rem;
   }
 }
 .footer .footer-desc .footer-about {
