@@ -134,216 +134,37 @@ html {
     transform: rotate(180deg);
   }
 }
-.cover {
-  padding: 5rem 5%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.cover .cover-desc {
-  text-align: center;
-}
-.cover .cover-desc h1 {
-  color: var(--white);
-  font-size: var(--h1);
-  font-weight: 800;
-}
-.cover .cover-desc p {
-  font-size: var(--p);
-  color: var(--white);
-  margin-bottom: 1.5rem;
-}
-.cover .cover-desc a {
-  padding: 12px 34px;
-  border-radius: 5px;
-  background-color: var(--red);
-  color: var(--white);
-  font-size: var(--a);
-  text-decoration: none;
-  transition: 0.5s ease;
-}
-.cover .cover-desc a:hover {
-  background-color: var(--black);
-}
-
-@media (max-width: 600px) {
-  .cover {
-    height: 100vh;
-    padding: 15rem 1rem;
-  }
-}
 .about {
+  padding: 3rem 5%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 3rem 5%;
 }
 .about .about-img img {
-  width: 30rem;
-  margin: 1rem 0;
+  width: 20rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .about .about-desc {
   margin-left: 2rem;
-  line-height: 15px;
-}
-.about .about-desc h1 {
-  font-size: var(--h1);
-  color: var(--black);
-  font-weight: 800;
-}
-.about .about-desc li {
-  text-align: left;
-  font-size: var(--a);
 }
 .about .about-desc p {
-  margin: 2rem 0;
+  font-size: var(--p);
+  margin: 0;
 }
-.about .about-desc a {
-  font-size: var(--a);
-  padding: 12px 34px;
-  border-radius: 5px;
-  background-color: var(--red);
-  color: var(--white);
-  text-decoration: none;
-  transition: 0.5s ease;
-}
-.about .about-desc a:hover {
-  background-color: var(--black);
+.about .about-desc b {
+  color: var(--red);
 }
 
 @media (max-width: 800px) {
   .about {
-    padding: 3rem 1rem;
     display: block;
+    text-align: center;
+    padding: 3rem 1rem;
   }
   .about .about-img img {
     width: 100%;
-  }
-  .about .about-desc {
     margin: 2rem 0;
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  .about .about-desc li {
-    padding: 0 1rem;
-  }
-}
-.history {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--lightgray);
-  padding: 3rem 5%;
-}
-.history .history-img img {
-  width: 40rem;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.history .history-desc {
-  margin: 0 1.5rem;
-}
-.history .history-desc h1 {
-  color: var(--black);
-  font-size: var(--h1);
-  font-weight: 800;
-}
-.history .history-desc p {
-  font-size: var(--p);
-  color: var(--black);
-  margin-bottom: 1.5rem;
-}
-.history .history-desc a {
-  padding: 12px 34px;
-  border-radius: 5px;
-  background-color: var(--red);
-  color: var(--white);
-  font-size: var(--a);
-  text-decoration: none;
-  transition: 0.5s ease;
-}
-.history .history-desc a:hover {
-  background-color: var(--black);
-}
-.history .order {
-  order: -1;
-}
-
-@media (max-width: 800px) {
-  .history {
-    padding: 3rem 1rem;
-    display: block;
-  }
-  .history .history-img img {
-    width: 100%;
-  }
-  .history .history-desc {
-    margin: 2rem 0;
-    text-align: center;
-  }
-  .history .order {
-    order: 1;
-  }
-}
-.contact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 3rem 5%;
-}
-.contact .contact-img img {
-  width: 40rem;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-.contact .contact-desc {
-  margin-left: 2rem;
-}
-.contact .contact-desc h1 {
-  color: var(--black);
-  font-size: var(--h1);
-  font-weight: 800;
-}
-.contact .contact-desc .form-label {
-  font-size: var(--a);
-  margin: 1rem 0;
-}
-.contact .contact-desc textarea {
-  margin-bottom: 1.5rem;
-}
-.contact .contact-desc .btn {
-  padding: 12px 34px;
-  border-radius: 5px;
-  background-color: var(--red);
-  color: var(--white);
-  font-size: var(--a);
-  text-decoration: none;
-  transition: 0.5s ease;
-}
-.contact .contact-desc .btn:hover {
-  background-color: var(--black);
-}
-.contact .order {
-  order: 1;
-}
-
-@media (max-width: 800px) {
-  .contact {
-    padding: 3rem 1rem;
-    display: block;
-  }
-  .contact .contact-img img {
-    width: 100%;
-  }
-  .contact .contact-desc {
-    margin: 2rem 0;
-    text-align: left;
-  }
-  .contact .order {
-    order: 1;
+    border-radius: 30px;
   }
 }
 .footer .footer-desc .footer-about {
