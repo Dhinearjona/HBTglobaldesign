@@ -260,11 +260,14 @@ html {
   }
   .about .about-desc {
     margin: 2rem 0;
-    line-height: 15px;
+    line-height: 20px;
     text-align: center;
   }
 }
 @media (max-width: 500px) {
+  .about .about-desc {
+    line-height: 25px;
+  }
   .about .about-desc li {
     padding: 0 1rem;
   }
