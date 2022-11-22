@@ -16,10 +16,10 @@
     --gray: #778591;
     --darkgray: #616161;
 
-    --h1: clamp(2.25rem, -0.5625rem + 9vw, 4.5rem);
-    --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
-    --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
-    --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+    --h1: clamp(1.625rem, 0.3617rem + 4.0426vw, 4rem);
+    --h2: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
+    --p: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
+    --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
 }
 
 ::-webkit-scrollbar {
@@ -221,7 +221,7 @@ html {
                     border: 0;
 
                     h2 {
-                        font-size: var(--p);
+                        font-size: var(--h2);
                         font-weight: 700;
                         margin-bottom: 1rem;
                     }
