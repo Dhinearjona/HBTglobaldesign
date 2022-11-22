@@ -18,7 +18,7 @@
   --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
   --h2: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
   --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
-  --p: clamp(0.875rem, 0.5426rem + 1.0638vw, 1.5rem);
+  --p: clamp(0.75rem, 0.5505rem + 0.6383vw, 1.125rem);
   --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
 }
 
@@ -72,7 +72,7 @@ html {
 }
 .header #menu-btn {
   display: none;
-  font-size: var(--p);
+  font-size: var(--h2);
   color: var(--black);
   cursor: pointer;
 }
@@ -185,7 +185,7 @@ html {
   margin-bottom: 1rem;
 }
 .services .services-desc .row .column .card p {
-  font-size: var(--a);
+  font-size: var(--p);
 }
 
 @media (max-width: 800px) {
@@ -252,7 +252,7 @@ html {
 
 @media (max-width: 800px) {
   .about {
-    padding: 3rem 1rem;
+    padding: 0 1rem;
     display: block;
   }
   .about .about-img img {
@@ -260,7 +260,7 @@ html {
   }
   .about .about-desc {
     margin: 2rem 0;
-    line-height: 20px;
+    line-height: 15px;
     text-align: center;
   }
 }
@@ -363,6 +363,9 @@ html {
   font-size: var(--h2);
   margin-top: 1rem;
   font-weight: 800;
+}
+.project .project-card .row .column .card p {
+  font-size: var(--p);
 }
 .project .project-card .row .column .card a {
   font-size: var(--a);
