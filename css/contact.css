@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   --lightgray: #F6F6F6;
   --gray: #778591;
   --darkgray: #616161;
-  --h1: clamp(2.25rem, 1.3125rem + 3vw, 3rem);
+  --h1: clamp(1.5rem, -2.25rem + 12vw, 4.5rem);
   --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
   --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
   --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
@@ -233,124 +233,72 @@ html {
     padding: 1.5rem 1.5rem;
   }
 }
-.footer .footer-desc .footer-about {
-  height: 270px;
-  padding: 2rem 3rem;
+.footer {
+  padding: 2rem 1rem;
+}
+.footer .footer-title {
+  text-align: center;
+}
+.footer .footer-title h1 {
+  font-size: var(--h1);
+  font-weight: 800;
+  color: var(--red);
+  margin-bottom: 2rem;
+}
+.footer .footer-title ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0;
 }
-.footer .footer-desc .footer-about p {
-  color: var(--black);
-  font-size: var(--a);
-  line-height: 1.5rem;
-  width: 25%;
-}
-.footer .footer-desc .footer-links {
-  margin-left: 3rem;
-}
-.footer .footer-desc .footer-links h1 {
-  color: var(--black);
-  font-weight: 700;
-  font-size: var(--h2);
-  text-transform: uppercase;
-}
-.footer .footer-desc .footer-links hr {
-  width: 5rem;
-}
-.footer .footer-desc .footer-links a {
-  text-decoration: none;
-  color: var(--black);
-  font-size: var(--a);
-  display: block;
-  line-height: 2rem;
-  transition: 0.5s ease;
-}
-.footer .footer-desc .footer-links a:hover {
-  font-weight: bolder;
-}
-.footer .footer-desc .footer-contact {
-  margin-left: 3rem;
-}
-.footer .footer-desc .footer-contact h1 {
-  color: var(--black);
-  font-weight: 700;
-  font-size: var(--h2);
-  text-transform: uppercase;
-}
-.footer .footer-desc .footer-contact hr {
-  width: 5rem;
-}
-.footer .footer-desc .footer-contact a {
-  width: 20rem;
-  text-decoration: none;
-  color: var(--black);
-  font-size: var(--a);
-  display: block;
-  line-height: 2rem;
-  cursor: pointer;
-  transition: 0.5s ease;
-}
-.footer .footer-desc .footer-contact a:hover {
-  font-weight: 800;
-}
-.footer .footer-desc .footer-contact i {
-  color: var(--black);
-}
-.footer .footer-desc .foot {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 1rem;
-}
-.footer .footer-desc .foot p {
-  color: var(--black);
-  font-size: var(--a);
-}
-.footer .footer-desc .foot a {
-  color: var(--black);
-  font-weight: 800;
-  text-decoration: none;
-}
-.footer .footer-desc .foot .social a {
+.footer .footer-title ul li {
+  list-style: none;
   margin: 0 1rem;
+}
+.footer .footer-title ul a {
   font-size: var(--a);
   color: var(--black);
+  text-transform: uppercase;
+  text-decoration: underline;
   transition: 0.5s ease;
 }
-.footer .footer-desc .foot .social a:hover {
-  font-weight: bolder;
+.footer .footer-title ul a:hover {
+  color: var(--red);
+}
+.footer .footer-title ol {
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.footer .footer-title ol a {
+  margin: 0 1rem;
+  color: var(--black);
+  font-size: var(--p);
+  text-transform: uppercase;
+  text-decoration: underline;
+  transition: 0.5s ease;
+}
+.footer .footer-title ol a:hover {
+  color: var(--red);
+}
+.footer .footer-title p {
+  font-size: var(--a);
+}
+.footer .footer-title a {
+  color: var(--red);
+  text-decoration: none;
 }
 
-@media (max-width: 768px) and (min-width: 501px) {
-  .footer .footer-desc .footer-about {
-    padding: 3rem 1rem;
-  }
-  .footer .footer-desc .footer-links {
-    margin-left: 3rem;
-  }
-  .footer .footer-desc .footer-contact {
-    margin-left: 3rem;
-  }
-}
 @media (max-width: 500px) {
-  .footer .footer-desc .foot {
+  .footer .footer-title {
+    text-align: left;
+  }
+  .footer .footer-title ul {
     display: block;
+    text-align: left;
+    line-height: 2rem;
+  }
+  .footer p {
     text-align: center;
-  }
-  .footer .footer-desc .foot p {
-    margin-bottom: 2rem;
-  }
-  .footer .footer-desc .footer-about {
-    height: auto;
-    display: block;
-    padding: 1rem 1rem;
-  }
-  .footer .footer-desc .footer-about p {
-    width: 100%;
-  }
-  .footer .footer-desc .footer-links {
-    margin: 2rem 0;
-  }
-  .footer .footer-desc .footer-contact {
-    margin-left: 0;
   }
 }
