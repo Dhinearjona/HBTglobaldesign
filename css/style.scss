@@ -17,9 +17,9 @@
     --darkgray: #616161;
 
     --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
-    --h2: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
+    --h2: clamp(1.125rem, 1.0585rem + 0.2128vw, 1.25rem);
     --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
-    --p: clamp(0.75rem, 0.5505rem + 0.6383vw, 1.125rem);
+    --p: clamp(1rem, 1rem + 0vw, 1rem);
     --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
 }
 
@@ -281,7 +281,7 @@ html {
     
     .about-desc {
         margin-left: 2rem;
-        line-height: 16px;
+        line-height: 1rem;
 
         h1 {
             font-size: var(--h1);
@@ -413,6 +413,10 @@ html {
         .history-desc {
             margin: 2rem 0;
             text-align: center;
+
+            h1 {
+                margin-bottom: 1rem;
+            }
         }
 
         .order {
@@ -457,6 +461,8 @@ html {
                     
                     img {
                         width: 100%;
+                        border-radius: 20px;
+                        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                     }
 
                     h2 {
@@ -567,7 +573,7 @@ html {
         }
 
         .form-label {
-            font-size: var(--a);
+            font-size: var(--p);
             margin: 1rem 0;
         }
 
@@ -675,11 +681,12 @@ html {
         }
 
         p {
-            font-size: var(--a);
+            font-size: var(--p);
         }
 
         a {
             color: var(--red);
+            font-size: var(--p);
             text-decoration: none;
         }
     }
