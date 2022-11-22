@@ -16,7 +16,7 @@
     --gray: #778591;
     --darkgray: #616161;
 
-    --h1: clamp(1.5rem, -2.25rem + 12vw, 4.5rem);
+    --h1: clamp(2.25rem, -0.5625rem + 9vw, 4.5rem);
     --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
     --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
     --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
@@ -189,32 +189,76 @@ html {
     }
 }
 
-.cover2 {
-    height: 100vh;
-    padding: 5rem 5%;
-    background-color: var(--lightgold);
-    background-position: center;
-    background-size: cover;
+.services {
+    padding: 3rem 5%;
+    background-color: var(--lightgray);
 
-    .cover-desc {
+    .services-title {
         text-align: center;
-        padding: 10rem 0;
 
         h1 {
-            width: 100%;
-            color: var(--black);
             font-size: var(--h1);
+            color: var(--red);
             font-weight: 800;
-            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .services-desc {
+
+        .row {
+
+            .column {
+                display: contents;
+                justify-content: center;
+
+                .card {
+                    width: 25rem;
+                    text-align: center;
+                    background: transparent;
+                    margin: 0 1rem;
+                    padding: 1rem 1rem;
+                    border: 0;
+
+                    h2 {
+                        font-size: var(--p);
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+
+                    p {
+                        font-size: var(--a);
+                    }
+                }
+            }
         }
     }
 }
 
-@media (max-width: 500px) {
-    .cover2 {
+@media (max-width: 800px) {
+    .services {
+        height: 100%;
+        padding: 1rem 1rem;
 
-        .cover-desc {
-            padding: 10rem 0;
+        .services-desc {
+
+            .row {
+                display: contents;
+                justify-content: space-between;
+                align-items: center;
+
+                .column {
+                    display: grid;
+                    padding: 0;
+                    justify-content: center;
+
+                    .card {
+                        width: 100%;
+                        margin: 1rem 0;
+                        padding: 0;
+                    }
+                }
+            }
         }
     }
 }
@@ -223,7 +267,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 5%;
+    padding: 0 5%;
 
     .about-img {
 
