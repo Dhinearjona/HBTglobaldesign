@@ -11,13 +11,15 @@
   --red: #FF3333;
   --brown: #996633;
   --gold: #FFCC66;
+  --lightgold: #ffc65388;
   --lightgray: #F6F6F6;
   --gray: #778591;
   --darkgray: #616161;
-  --h1: clamp(1.5rem, -2.25rem + 12vw, 4.5rem);
-  --h2: clamp(0.875rem, -0.8438rem + 5.5vw, 2.25rem);
-  --p: clamp(0.875rem, 0.0938rem + 2.5vw, 1.5rem);
-  --a: clamp(0.875rem, 0.5625rem + 1vw, 1.125rem);
+  --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
+  --h2: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
+  --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
+  --p: clamp(0.875rem, 0.5426rem + 1.0638vw, 1.5rem);
+  --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
 }
 
 ::-webkit-scrollbar {
@@ -260,18 +262,4 @@ html {
 .footer .footer-title a {
   color: var(--red);
   text-decoration: none;
-}
-
-@media (max-width: 500px) {
-  .footer .footer-title {
-    text-align: left;
-  }
-  .footer .footer-title ul {
-    display: block;
-    text-align: left;
-    line-height: 2rem;
-  }
-  .footer p {
-    text-align: center;
-  }
 }
