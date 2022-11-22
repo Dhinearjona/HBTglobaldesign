@@ -164,6 +164,15 @@ html {
   margin: 1rem 0;
 }
 
+@media (max-width: 800px) {
+  .cover2 {
+    padding: 3rem 0;
+  }
+  .cover2 .cover-img img {
+    padding: 1rem 1rem;
+    margin: 0;
+  }
+}
 .about {
   display: flex;
   justify-content: space-between;
