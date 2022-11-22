@@ -19,7 +19,7 @@
     --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
     --h2: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
     --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
-    --p: clamp(0.875rem, 0.5426rem + 1.0638vw, 1.5rem);
+    --p: clamp(0.75rem, 0.5505rem + 0.6383vw, 1.125rem);
     --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
 }
 
@@ -80,7 +80,7 @@ html {
 
     #menu-btn {
         display: none;
-        font-size: var(--a);
+        font-size: var(--h2);
         color: var(--black);
         cursor: pointer;
     }
