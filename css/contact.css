@@ -140,8 +140,8 @@ html {
   text-align: center;
 }
 .contact .contact-title h1 {
-  color: var(--red);
   font-size: var(--h1);
+  text-transform: uppercase;
   font-weight: 800;
 }
 .contact .contact-title p {
@@ -244,7 +244,6 @@ html {
 .footer .footer-title h1 {
   font-size: var(--h1);
   font-weight: 800;
-  color: var(--red);
   margin-bottom: 2rem;
 }
 .footer .footer-title ul {
@@ -284,11 +283,12 @@ html {
   color: var(--red);
 }
 .footer .footer-title p {
-  font-size: var(--a);
+  font-size: var(--p);
 }
 .footer .footer-title a {
-  color: var(--red);
+  font-size: var(--p);
   text-decoration: none;
+  color: var(--black);
 }
 
 @media (max-width: 500px) {

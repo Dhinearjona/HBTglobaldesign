@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="icon" href="img/logo.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Home - Charm HBT Global Design</title>
@@ -34,19 +35,25 @@
         </div>
     </div>
 
-    <div class="cover2">
-        <div class="cover-img">
-            <img src="img/poster1.jpg"  data-aos="zoom-in-up" />
-            <img src="img/poster2.jpg"  data-aos="zoom-in-up" />
-            <img src="img/poster3.jpg"  data-aos="zoom-in-up" />
-            <img src="img/poster4.jpg"  data-aos="zoom-in-up" />
-            <img src="img/poster5.jpg"  data-aos="zoom-in-up" />
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h2>“Interior and Exterior wall complete and finished in one pile.”</h2>
+                <p>- Charm HBT Global Designs -</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>“Classy yet not costly save money and time with hundreds of designs to choose from.”</h2>
+                <p>- Charm HBT Global Designs -</p>
+            </div>
+            <div class="swiper-slide">
+                <h2>“Electrical and plumbing already embedded.”</h2>
+                <p>- Charm HBT Global Designs -</p>
+            </div>
         </div>
     </div>
 
     <div class="about">
         <div class="about-img" data-aos="zoom-in-up" >
-            <img src="img/img1.jpg"/>
             <img src="img/img4.jpg"/>
         </div>
         <div class="about-desc order" data-aos="zoom-in-up">
@@ -70,7 +77,6 @@
 
     <div class="history">
         <div class="history-img" data-aos="zoom-in-up">
-            <img src="img/img2.jpg" />
             <img src="img/img5.jpg" />
         </div>
         <div class="history-desc order" data-aos="zoom-in-up">
@@ -82,7 +88,7 @@
 
     <div class="project">
         <div class="project-title" data-aos="zoom-in-up">
-            <h1>Featured Projects</h1>
+            <h1>Our Services</h1>
             <p>Sample Hollow Block Tiles</p>
         </div>
         <div class="project-card">
@@ -167,6 +173,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init() 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
     <script src="js/main.js"></script>
 </body>

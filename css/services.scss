@@ -171,6 +171,7 @@ html {
 .services {
     height: 100%;
     padding: 1rem 5%;
+    background-color: var(--lightgray);
 
     .services-title {
         text-align: center;
@@ -178,7 +179,7 @@ html {
         h1 {
             font-size: var(--h1);
             font-weight: 800;
-            color: var(--red);
+            text-transform: uppercase;
         }
 
         p {
@@ -200,12 +201,14 @@ html {
                 align-items: center;
 
                 .card {
-                    width: 20rem;
+                    width: 22rem;
                     background: transparent;
-                    align-items: center;
                     border: 0;
                     margin: 1rem 1rem;
                     text-align: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    padding: 1rem 1rem;
+                    border-radius: 10px;
                     
                     img {
                         width: 20rem;
@@ -296,7 +299,6 @@ html {
 }
 
 .footer {
-    background-color: var(--lightgray);
     padding: 2rem 1rem;
 
     .footer-title {
@@ -305,7 +307,6 @@ html {
         h1 {
             font-size: var(--h1);
             font-weight: 800;
-            color: var(--red);
             margin-bottom: 2rem;
         }
 
@@ -357,9 +358,9 @@ html {
         }
 
         a {
-            color: var(--red);
             font-size: var(--p);
             text-decoration: none;
+            color: var(--black);
         }
     }
 }
