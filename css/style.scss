@@ -363,7 +363,8 @@
         .swiper-wrapper {
 
             .swiper-slide {
-                height: 27rem;
+                height: 29rem;
+                padding: 1rem 0;
                 justify-content: center;
                 align-items: center;
                 background-color: var(--white);
@@ -382,6 +383,7 @@
 
                 h3 {
                     font-size: var(--h3);
+                    font-weight: 800;
                     text-transform: uppercase;
                     padding: 1rem 1rem;
                 }

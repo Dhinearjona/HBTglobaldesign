@@ -1,44 +1,21 @@
 * {
-  font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 :root {
   --black: #121212;
   --white: #FFFFFF;
-  --red: #FF3333;
-  --brown: #996633;
-  --gold: #FFCC66;
-  --lightgold: #ffc65388;
   --lightgray: #F6F6F6;
-  --gray: #778591;
   --darkgray: #616161;
-  --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
-  --h2: clamp(1.125rem, 1.0585rem + 0.2128vw, 1.25rem);
-  --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
-  --p: clamp(1rem, 1rem + 0vw, 1rem);
-  --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
-}
-
-::-webkit-scrollbar {
-  height: 0.5rem;
-  width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--red);
-}
-
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 6rem;
+  --red: #FF3333;
+  --h1: clamp(1.5rem, 0.7021rem + 2.5532vw, 3rem);
+  --h2: clamp(1.5rem, 1.3005rem + 0.6383vw, 1.875rem);
+  --h3: clamp(0.75rem, 0.484rem + 0.8511vw, 1.25rem);
+  --p: clamp(1rem, 0.9335rem + 0.2128vw, 1.125rem);
+  --a: clamp(0.75rem, 0.6835rem + 0.2128vw, 0.875rem);
 }
 
 .header {
@@ -62,8 +39,9 @@ html {
 }
 .header .navbar a {
   margin-left: 2rem;
-  font-size: var(--a);
+  font-size: var(--p);
   color: var(--black);
+  font-weight: 500;
   text-decoration: none;
   transition: 0.5s ease;
 }
@@ -101,7 +79,6 @@ html {
   }
   .header #menu-btn {
     display: inline-block;
-    font-size: var(--p);
   }
   .header #menu-btn.fa-times {
     transform: rotate(180deg);
@@ -165,11 +142,13 @@ html {
   }
 }
 .about {
-  height: 100vh;
-  padding: 0 5%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  padding: 5rem 10%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover3.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .about .about-img img {
   width: 20rem;
@@ -178,13 +157,9 @@ html {
 .about .about-desc {
   margin-left: 2rem;
 }
-.about .about-desc h1 {
-  font-size: var(--h1);
-  font-weight: 800;
-  color: var(--red);
-}
 .about .about-desc p {
   font-size: var(--p);
+  color: var(--white);
   margin: 0;
 }
 .about .about-desc b {
@@ -199,7 +174,7 @@ html {
     padding: 3rem 1rem;
   }
   .about .about-img img {
-    width: 100%;
+    width: 15rem;
     margin-bottom: 2rem;
     border-radius: 30px;
   }
@@ -209,7 +184,6 @@ html {
 }
 .footer {
   padding: 2rem 1rem;
-  background-color: var(--lightgray);
 }
 .footer .footer-title {
   text-align: center;
@@ -218,6 +192,10 @@ html {
   font-size: var(--h1);
   font-weight: 800;
   margin-bottom: 2rem;
+}
+.footer .footer-title b {
+  color: var(--red);
+  font-weight: 800;
 }
 .footer .footer-title ul {
   display: flex;

@@ -1,45 +1,22 @@
 * {
-    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --black: #121212;
     --white: #FFFFFF;
-    --red: #FF3333;
-    --brown: #996633;
-    --gold: #FFCC66;
-    --lightgold: #ffc65388;
     --lightgray: #F6F6F6;
-    --gray: #778591;
     --darkgray: #616161;
+    --red: #FF3333;
 
-    --h1: clamp(2.125rem, 1.6596rem + 1.4894vw, 3rem);
-    --h2: clamp(1.125rem, 1.0585rem + 0.2128vw, 1.25rem);
-    --h3: clamp(2.125rem, 0.8617rem + 4.0426vw, 4.5rem);
-    --p: clamp(1rem, 1rem + 0vw, 1rem);
-    --a: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
-}
-
-::-webkit-scrollbar {
-    height: .5rem;
-    width: 1rem;
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--red);
-}
-
-html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
+    --h1: clamp(1.5rem, 0.7021rem + 2.5532vw, 3rem);
+    --h2: clamp(1.5rem, 1.3005rem + 0.6383vw, 1.875rem);
+    --h3: clamp(0.75rem, 0.484rem + 0.8511vw, 1.25rem);
+    --p: clamp(1rem, 0.9335rem + 0.2128vw, 1.125rem);
+    --a: clamp(0.75rem, 0.6835rem + 0.2128vw, 0.875rem);
 }
 
 .header {
@@ -67,8 +44,9 @@ html {
 
         a {
             margin-left: 2rem;
-            font-size: var(--a);
+            font-size: var(--p);
             color: var(--black);
+            font-weight: 500;
             text-decoration: none;
             transition: 0.5s ease;
         }
@@ -180,6 +158,11 @@ html {
             font-weight: 800;
         }
 
+        b {
+            color: var(--red);
+            font-weight: 800;
+        }
+
         p {
             font-size: var(--p);
         }
@@ -206,6 +189,7 @@ html {
                     color: var(--red);
                     font-size: var(--h1);
                     font-weight: 800;
+                    text-transform: uppercase;
                 }
     
                 p {
@@ -249,6 +233,7 @@ html {
                 font-size: var(--h1);
                 color: var(--red);
                 font-weight: 800;
+                text-transform: uppercase;
             }
 
             textarea {
