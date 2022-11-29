@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+:root {
+  --black: #121212;
+  --white: #FFFFFF;
+  --lightgray: #F6F6F6;
+  --darkgray: #616161;
+  --red: #FF3333;
+  --h1: clamp(1.5rem, 0.7021rem + 2.5532vw, 3rem);
+  --h2: clamp(1.5rem, 1.3005rem + 0.6383vw, 1.875rem);
+  --h3: clamp(0.75rem, 0.484rem + 0.8511vw, 1.25rem);
+  --p: clamp(1rem, 0.9335rem + 0.2128vw, 1.125rem);
+  --a: clamp(0.75rem, 0.6835rem + 0.2128vw, 0.875rem);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 2000;
+}
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 5%;
+}
+.header .flex img {
+  height: 5rem;
+}
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: var(--p);
+  color: var(--black);
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.header .navbar a:hover {
+  color: var(--red);
+}
+.header #menu-btn {
+  display: none;
+  font-size: var(--h2);
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+  .header .flex img {
+    height: 5rem;
+  }
+  .header .navbar {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s ease;
+  }
+  .header .navbar a {
+    display: block;
+    padding: 1rem 1rem;
+  }
+  .header .navbar.active {
+    top: 100%;
+    display: block;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 500px) {
+  .header .flex img {
+    height: 5rem;
+  }
+  .header .navbar {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s ease;
+  }
+  .header .navbar a {
+    display: block;
+    padding: 1rem 1rem;
+  }
+  .header .navbar.active {
+    top: 100%;
+    display: block;
+  }
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+}
