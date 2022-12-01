@@ -173,6 +173,9 @@ span {
   color: var(--red);
   font-weight: 800;
 }
+.services .card {
+  width: 30rem !important;
+}
 .services .swiper {
   width: 100%;
   height: 100%;
@@ -182,6 +185,7 @@ span {
 }
 .services .swiper .swiper-wrapper .swiper-slide {
   height: 36rem;
+  padding: 1rem 1rem;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
@@ -203,7 +207,7 @@ span {
   padding: 1rem 1rem;
 }
 .services .swiper .swiper-wrapper .swiper-slide p {
-  padding: 0 1rem;
+  margin: 0 1rem;
   font-size: var(--p);
   margin-bottom: 1rem;
 }
