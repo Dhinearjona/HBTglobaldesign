@@ -25,13 +25,16 @@
         }
     }
 
+    span {
+        font-weight: 800;
+    }
+
     .services-card {
         margin-top: 2rem;
 
         .row {
 
             .column {
-                text-align: center;
                 display: flex;
                 flex-wrap: wrap;
                 align-content: space-between;
@@ -65,7 +68,7 @@
                     }
     
                     p {
-                        padding: 0 1rem;
+                        padding: 0 4rem;
                         font-size: var(--p);
                         margin-bottom: 1rem;
                     }

@@ -181,8 +181,12 @@
     }
 }
 
+span {
+    font-weight: 800;
+}
+
 .services {
-    height: 100vh;
+    height: 120vh;
     padding: 5rem 10%;
     background-color: var(--lightgray);
 
@@ -214,9 +218,10 @@
         height: 100%;
 
         .swiper-wrapper {
+            justify-content: center;
 
             .swiper-slide {
-                height: 28rem;
+                height: 36rem;
                 justify-content: center;
                 align-items: center;
                 background-color: var(--white);
@@ -266,6 +271,7 @@
         .swiper {
 
             .swiper-wrapper {
+                justify-content: space-between;
 
                 .swiper-slide {
                     margin-bottom: 2.5rem;

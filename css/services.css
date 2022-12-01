@@ -20,11 +20,13 @@
 .services .services-title p {
   font-size: var(--p);
 }
+.services span {
+  font-weight: 800;
+}
 .services .services-card {
   margin-top: 2rem;
 }
 .services .services-card .row .column {
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -55,7 +57,7 @@
   padding: 1rem 1rem;
 }
 .services .services-card .row .column .card p {
-  padding: 0 1rem;
+  padding: 0 4rem;
   font-size: var(--p);
   margin-bottom: 1rem;
 }
