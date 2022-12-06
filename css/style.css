@@ -8,7 +8,7 @@
   background-size: cover;
 }
 .cover .cover-desc {
-  line-height: 3.5rem;
+  line-height: 2rem;
 }
 .cover .cover-desc h3 {
   font-size: var(--h3);
@@ -19,10 +19,12 @@
 .cover .cover-desc h1 {
   font-size: var(--h1);
   font-weight: 800;
+  text-transform: uppercase;
   color: var(--white);
 }
 .cover .cover-desc p {
   font-size: var(--p);
+  text-transform: uppercase;
   color: var(--white);
 }
 .cover .cover-desc b {
@@ -65,7 +67,7 @@
     text-align: center;
   }
   .cover .cover-desc {
-    line-height: 3rem;
+    line-height: 2rem;
   }
 }
 @media (max-width: 500px) {
@@ -74,7 +76,7 @@
     text-align: center;
   }
   .cover .cover-desc {
-    line-height: 2.5rem;
+    line-height: 2rem;
   }
   .cover .cover-desc .btn1 {
     padding: 1rem 2rem;
