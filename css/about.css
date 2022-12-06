@@ -56,9 +56,6 @@
   color: var(--white);
   margin: 0;
 }
-.about .about-desc b {
-  color: var(--red);
-}
 
 @media (max-width: 800px) {
   .about {

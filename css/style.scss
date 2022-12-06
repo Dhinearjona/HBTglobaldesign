@@ -2,24 +2,24 @@
 @import url('footer.css');
 
 .cover {
-    height: 88.2vh;
-    padding: 11rem 5%;
+    height: 90vh;
+    padding: 13rem 5%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
     background-position: center;
     background-size: cover;
 
     .cover-desc {
-        line-height: 2rem;
+        text-align: center;
 
         h3 {
-            font-size: var(--h3);
+            font-size: var(--p);
             font-weight: 500;
             color: var(--white);
             text-transform: uppercase;
         }
 
         h1 {
-            font-size: var(--h1);
+            font-size: var(--h2);
             font-weight: 800;
             text-transform: uppercase;
             color: var(--white);
@@ -32,7 +32,8 @@
         }
 
         b {
-            color: var(--red);
+            color: var(--white);
+            font-size: 60px;
         }
 
         .btn1 {
@@ -51,50 +52,24 @@
             border: 1px solid var(--white);
             color: var(--white);
         }
-
-        .btn2 {
-            padding: 12px 34px;
-            font-size: var(--a);
-            background-color: transparent;
-            border: 1px solid var(--white);
-            text-decoration: none;
-            color: var(--white);
-            text-transform: uppercase;
-            transition: 0.5s ease;
-        }
-
-        .btn2:hover {
-            background-color: var(--red);
-            border: 0;
-            color: var(--white);
-        }
     }
 }
 
 @media (max-width: 800px) and (min-width: 501px) {
     .cover {
-        padding: 8rem 5%;
+        padding: 11rem 5%;
         text-align: center;
-
-        .cover-desc {
-            line-height: 2rem;
-        }
     }
 }
 
 @media (max-width: 500px) {
     .cover {
-        padding: 10rem 1rem;
+        padding: 9rem 1rem;
         text-align: center;
 
         .cover-desc {
-            line-height: 2rem;
 
             .btn1 {
-                padding: 1rem 2rem;
-            }
-
-            .btn2 {
                 padding: 1rem 2rem;
             }
         }
