@@ -26,6 +26,7 @@
   font-size: var(--p);
   text-transform: uppercase;
   color: var(--white);
+  margin-top: 1.5rem;
 }
 .cover .cover-desc b {
   color: var(--white);
@@ -58,6 +59,9 @@
     padding: 9rem 1rem;
     text-align: center;
   }
+  .cover .cover-desc h1 {
+    margin-bottom: 1.5rem;
+  }
   .cover .cover-desc .btn1 {
     padding: 1rem 2rem;
   }
@@ -70,11 +74,6 @@
 }
 .about .about-left {
   width: 35rem;
-}
-.about .about-left h3 {
-  font-size: var(--h3);
-  font-weight: 500;
-  text-transform: uppercase;
 }
 .about .about-left p {
   font-size: var(--p);
@@ -129,12 +128,12 @@ span {
 }
 
 .services {
-  height: 120vh;
-  padding: 5rem 10%;
+  padding: 7rem 10%;
   background-color: var(--lightgray);
 }
 .services .services-title {
   margin-bottom: 2rem;
+  text-align: center;
 }
 .services .services-title h3 {
   font-size: var(--h3);
@@ -152,8 +151,8 @@ span {
   color: var(--red);
   font-weight: 800;
 }
-.services .card {
-  width: 30rem !important;
+.services .services-title p {
+  font-size: var(--p);
 }
 .services .swiper {
   width: 100%;
@@ -163,7 +162,7 @@ span {
   justify-content: center;
 }
 .services .swiper .swiper-wrapper .swiper-slide {
-  height: 36rem;
+  height: 25rem;
   padding: 1rem 1rem;
   justify-content: center;
   align-items: center;
