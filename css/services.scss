@@ -42,14 +42,19 @@
                 align-items: center;
 
                 .card {
-                    width: 30rem;
-                    height: 36rem;
+                    width: 25rem;
                     padding: 1rem 1rem;
                     margin: 0 1rem;
                     justify-content: center;
                     align-items: center;
                     background-color: var(--white);
                     overflow: hidden;
+
+                    h1 {
+                        font-size: var(--p);
+                        text-transform: uppercase;
+                        font-weight: 800;
+                    }
                     
                     img {
                         width: 100%;
@@ -61,14 +66,7 @@
                     img:hover {
                         transform: scale(1.1);
                     }
-    
-                    h3 {
-                        font-size: var(--h3);
-                        font-weight: 800;
-                        text-transform: uppercase;
-                        padding: 1rem 1rem;
-                    }
-    
+
                     p {
                         margin: 0 1rem;
                         font-size: var(--p);

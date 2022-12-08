@@ -34,14 +34,18 @@
   align-items: center;
 }
 .services .services-card .row .column .card {
-  width: 30rem;
-  height: 36rem;
+  width: 25rem;
   padding: 1rem 1rem;
   margin: 0 1rem;
   justify-content: center;
   align-items: center;
   background-color: var(--white);
   overflow: hidden;
+}
+.services .services-card .row .column .card h1 {
+  font-size: var(--p);
+  text-transform: uppercase;
+  font-weight: 800;
 }
 .services .services-card .row .column .card img {
   width: 100%;
@@ -51,12 +55,6 @@
 }
 .services .services-card .row .column .card img:hover {
   transform: scale(1.1);
-}
-.services .services-card .row .column .card h3 {
-  font-size: var(--h3);
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 1rem 1rem;
 }
 .services .services-card .row .column .card p {
   margin: 0 1rem;
