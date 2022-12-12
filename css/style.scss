@@ -4,12 +4,11 @@
 .cover {
     height: 90vh;
     padding: 13rem 5%;
-    background-image: url(/img/cover.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
     background-position: center;
     background-size: cover;
 
     .cover-desc {
-        // background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 
         h3 {
             font-size: var(--p);
@@ -273,13 +272,12 @@ span {
 .quote {
     height: 88.2vh;
     padding: 15rem 10%;
-    background-image: url(/img/cover.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
     background-position: center;
     background-size: cover;
 
     .quote-desc {
         text-align: center;
-        // background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
 
         h3 {
             font-size: var(--h2);
