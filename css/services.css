@@ -17,9 +17,6 @@
   color: var(--red);
   font-weight: 800;
 }
-.services .services-title p {
-  font-size: var(--p);
-}
 .services span {
   font-weight: 800;
 }

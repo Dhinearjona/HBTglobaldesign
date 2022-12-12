@@ -215,7 +215,7 @@ span {
 .quote {
   height: 88.2vh;
   padding: 15rem 10%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover2.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
   background-position: center;
   background-size: cover;
 }
