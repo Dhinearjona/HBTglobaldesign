@@ -3,7 +3,7 @@
 .cover {
   height: 90vh;
   padding: 13rem 5%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
+  background-image: url(/img/cover.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -215,7 +215,7 @@ span {
 .quote {
   height: 88.2vh;
   padding: 15rem 10%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(/img/cover.jpg);
+  background-image: url(/img/cover.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -237,6 +237,11 @@ span {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 800px) {
+  .quote {
+    padding: 11.1rem 10%;
+  }
+}
 .contact {
   display: flex;
   justify-content: space-around;

@@ -1,5 +1,10 @@
 @import url("header.css");
 @import url("footer.css");
+.contact {
+  background-image: linear-gradient(rgba(4, 9, 30, 0.473), rgba(4, 9, 30, 0.467)), url(/img/cover.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .contact .contact-title {
   padding: 5rem 10%;
   text-align: center;
@@ -8,6 +13,7 @@
   font-size: var(--h1);
   text-transform: uppercase;
   font-weight: 800;
+  color: var(--white);
 }
 .contact .contact-title b {
   color: var(--red);
@@ -15,13 +21,14 @@
 }
 .contact .contact-title p {
   font-size: var(--p);
+  color: var(--white);
 }
 .contact .contact-flex {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 1rem 5%;
-  background-color: var(--lightgray);
+  color: var(--white);
 }
 .contact .contact-flex .contact-side .contact-quote,
 .contact .contact-flex .contact-side .contact-info,
@@ -86,7 +93,10 @@
 @media (max-width: 500px) {
   .contact .contact-flex {
     display: block;
-    padding: 5rem 10%;
+    padding: 3rem 10%;
+  }
+  .contact .contact-flex .contact-form {
+    text-align: center;
   }
   .contact .contact-flex .contact-side .contact-quote,
 .contact .contact-flex .contact-side .contact-info,
