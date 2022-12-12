@@ -3,7 +3,7 @@
 
 .services {
     height: 100%;
-    padding: 5rem 5%;
+    padding: 5rem 10%;
     background-color: var(--lightgray);
 
     .services-title {
@@ -110,7 +110,7 @@
 @media (max-width: 500px) {
     .services {
         height: 100%;
-        padding: 2rem 1rem;
+        padding: 5rem 5%;
 
         .services-card {
             padding: 1rem 1rem;
