@@ -44,9 +44,6 @@
 .contact .contact-flex .contact-side .contact-quote p {
   font-size: var(--p);
 }
-.contact .contact-flex .contact-side .contact-quote .contact-info {
-  margin-left: 1rem;
-}
 .contact .contact-flex .contact-side .contact-quote .contact-info i {
   margin: 0 1rem;
   line-height: 3rem;
@@ -101,7 +98,7 @@
   .contact .contact-flex .contact-side .contact-quote,
 .contact .contact-flex .contact-side .contact-info,
 .contact .contact-flex .contact-side .social-media {
-    margin: 1rem 0.1rem;
+    margin: 1rem 1rem;
   }
   .contact .contact-flex .contact-side .contact-quote h1 {
     text-align: center;
