@@ -4,7 +4,7 @@
 .cover {
     height: 90vh;
     padding: 13rem 5%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url('/img/cover1.png');
     background-position: center;
     background-size: cover;
 
@@ -194,75 +194,74 @@ span {
         }
     }
 
-    .swiper {
-        width: 100%;
-        height: 100%;
+    .services-card {
+        margin-top: 2rem;
 
-        .swiper-wrapper {
-            justify-content: center;
+        .row {
 
-            .swiper-slide {
-                height: 28rem;
-                padding: 1rem 1rem;
+            .column {
+                display: flex;
+                flex-wrap: nowrap;
+                align-content: space-between;
                 justify-content: center;
                 align-items: center;
-                background-color: var(--white);
-                overflow: hidden;
 
-                h1 {
-                    font-size: var(--p);
-                    text-align: center;
-                    font-weight: 800;
-                    text-transform: uppercase;
-                }
-
-                img {
-                    width: 100%;
-                    cursor: pointer;
-                    transition: all .5s ease;
-                }
-
-                img:hover {
-                    transform: scale(1.1);
-                }
-
-                h3 {
-                    font-size: var(--h3);
-                    font-weight: 800;
-                    text-transform: uppercase;
+                .card {
+                    width: 25rem;
                     padding: 1rem 1rem;
-                }
+                    margin: 0 1rem;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: transparent;
+                    border: 0;
+                    overflow: hidden;
 
-                p {
-                    margin: 2rem 1rem;
-                    font-size: var(--p);
-                    margin-bottom: 1rem;
-                }
+                    h1 {
+                        font-size: var(--p);
+                        text-transform: uppercase;
+                        font-weight: 800;
+                    }
+                    
+                    img {
+                        width: 100%;
+                        height: 15rem;
+                        border-radius: 20px;
+                        cursor: pointer;
+                        transition: all .5s ease;
+                    }
+    
+                    img:hover {
+                        transform: scale(1.1);
+                    }
 
-                a {
-                    padding: 1rem 1rem;
-                    text-decoration: underline;
-                    color: var(--black);
-                    font-weight: 500;
-                    text-transform: uppercase;
+                    p {
+                        margin: 2rem 1rem;
+                        font-size: var(--p);
+                        margin-bottom: 1rem;
+                    }
+    
+                    a {
+                        padding: 1rem 1rem;
+                        text-decoration: underline;
+                        color: var(--black);
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
                 }
             }
         }
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     .services {
-        height: 100%;
-        padding: 5rem 10%;
 
-        .swiper {
+        .services-card {
 
-            .swiper-wrapper {
-                justify-content: space-between;
+            .row {
 
-                .swiper-slide {
-                    margin-bottom: 2.5rem;
+                .column {
+                    flex-wrap: wrap;
                 }
             }
         }
@@ -272,7 +271,7 @@ span {
 .quote {
     height: 88.2vh;
     padding: 15rem 10%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
+    background-image: linear-gradient(rgba(1, 7, 29, 0.47), rgba(1, 6, 22, 0.437)), url('/img/cover5.png');
     background-position: center;
     background-size: cover;
 

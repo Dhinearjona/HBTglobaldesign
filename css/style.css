@@ -3,7 +3,7 @@
 .cover {
   height: 90vh;
   padding: 13rem 5%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/cover1.png");
   background-position: center;
   background-size: cover;
 }
@@ -152,47 +152,47 @@ span {
 .services .services-title p {
   font-size: var(--p);
 }
-.services .swiper {
-  width: 100%;
-  height: 100%;
+.services .services-card {
+  margin-top: 2rem;
 }
-.services .swiper .swiper-wrapper {
-  justify-content: center;
-}
-.services .swiper .swiper-wrapper .swiper-slide {
-  height: 28rem;
-  padding: 1rem 1rem;
+.services .services-card .row .column {
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
+}
+.services .services-card .row .column .card {
+  width: 25rem;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0;
   overflow: hidden;
 }
-.services .swiper .swiper-wrapper .swiper-slide h1 {
+.services .services-card .row .column .card h1 {
   font-size: var(--p);
-  text-align: center;
-  font-weight: 800;
   text-transform: uppercase;
+  font-weight: 800;
 }
-.services .swiper .swiper-wrapper .swiper-slide img {
+.services .services-card .row .column .card img {
   width: 100%;
+  height: 15rem;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
-.services .swiper .swiper-wrapper .swiper-slide img:hover {
+.services .services-card .row .column .card img:hover {
   transform: scale(1.1);
 }
-.services .swiper .swiper-wrapper .swiper-slide h3 {
-  font-size: var(--h3);
-  font-weight: 800;
-  text-transform: uppercase;
-  padding: 1rem 1rem;
-}
-.services .swiper .swiper-wrapper .swiper-slide p {
+.services .services-card .row .column .card p {
   margin: 2rem 1rem;
   font-size: var(--p);
   margin-bottom: 1rem;
 }
-.services .swiper .swiper-wrapper .swiper-slide a {
+.services .services-card .row .column .card a {
   padding: 1rem 1rem;
   text-decoration: underline;
   color: var(--black);
@@ -200,22 +200,15 @@ span {
   text-transform: uppercase;
 }
 
-@media (max-width: 800px) {
-  .services {
-    height: 100%;
-    padding: 5rem 10%;
-  }
-  .services .swiper .swiper-wrapper {
-    justify-content: space-between;
-  }
-  .services .swiper .swiper-wrapper .swiper-slide {
-    margin-bottom: 2.5rem;
+@media (max-width: 500px) {
+  .services .services-card .row .column {
+    flex-wrap: wrap;
   }
 }
 .quote {
   height: 88.2vh;
   padding: 15rem 10%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url(/img/cover.jpg);
+  background-image: linear-gradient(rgba(1, 7, 29, 0.47), rgba(1, 6, 22, 0.437)), url("/img/cover5.png");
   background-position: center;
   background-size: cover;
 }

@@ -1,5 +1,23 @@
 @import url("header.css");
 @import url("footer.css");
+.cover {
+  padding: 30vh 10%;
+  text-align: center;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/cover6.png");
+  background-position: center;
+  background-size: cover;
+}
+.cover h1 {
+  font-size: var(--h1);
+  font-weight: 600;
+  color: var(--white);
+}
+.cover p {
+  font-size: var(--p);
+  font-weight: 500;
+  color: var(--white);
+}
+
 .services {
   height: 100%;
   padding: 5rem 10%;
@@ -36,7 +54,8 @@
   margin: 0 1rem;
   justify-content: center;
   align-items: center;
-  background-color: var(--white);
+  background-color: transparent;
+  border: 0;
   overflow: hidden;
 }
 .services .services-card .row .column .card h1 {
@@ -47,6 +66,7 @@
 .services .services-card .row .column .card img {
   width: 100%;
   height: 15rem;
+  border-radius: 20px;
   cursor: pointer;
   transition: all 0.5s ease;
 }
