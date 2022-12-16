@@ -54,7 +54,7 @@
 }
 @media (max-width: 500px) {
   .cover {
-    padding-top: 14rem;
+    padding-top: 18rem;
     text-align: center;
   }
   .cover .cover-desc h1 {
