@@ -58,14 +58,16 @@
 
 @media (max-width: 800px) and (min-width: 501px) {
     .cover {
-        padding: 11rem 8rem;
+        padding-top: 20rem;
+        // padding: 11rem 8rem;
         text-align: center;
     }
 }
 
 @media (max-width: 500px) {
     .cover {
-        padding: 10rem 2rem;
+        padding-top: 14rem;
+        // padding: 10rem 2rem;
         text-align: center;
 
         .cover-desc {
