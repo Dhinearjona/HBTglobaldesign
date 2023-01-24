@@ -110,7 +110,7 @@
 @media (max-width: 500px) {
   .services {
     height: 100%;
-    padding: 5rem 5%;
+    padding: 2rem 5%;
   }
   .services .services-card {
     padding: 1rem 1rem;
@@ -122,8 +122,15 @@
   .services .services-card .row .column {
     display: contents;
   }
-  .services .services-card .row .column .card {
-    margin-bottom: 2rem;
+  .services .services-card .row .column .card h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .services .services-card .row .column .card .h2 {
+    display: none;
+  }
+  .services .services-card .row .column .card .p1 {
+    display: none;
   }
   .services .services-card .row .column .card img {
     width: 100%;

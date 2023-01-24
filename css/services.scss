@@ -132,7 +132,7 @@
 @media (max-width: 500px) {
     .services {
         height: 100%;
-        padding: 5rem 5%;
+        padding: 2rem 5%;
 
         .services-card {
             padding: 1rem 1rem;
@@ -145,7 +145,19 @@
                     display: contents;
 
                     .card {
-                        margin-bottom: 2rem;
+
+                        h1 {
+                            margin-bottom: 1rem;
+                            text-align: center;
+                        }
+
+                        .h2 {
+                            display: none;
+                        }
+
+                        .p1 {
+                            display: none;
+                        }
 
                         img {
                             width: 100%;
