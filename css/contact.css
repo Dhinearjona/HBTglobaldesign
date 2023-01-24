@@ -1,7 +1,7 @@
 @import url("header.css");
 @import url("footer.css");
 .contact {
-  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/cover4.jpeg");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/tiles1.png");
   background-position: center;
   background-size: cover;
 }

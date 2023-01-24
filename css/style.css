@@ -3,7 +3,7 @@
 .cover {
   height: 90vh;
   padding: 13rem 5%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/cover1.png");
+  background-image: linear-gradient(rgba(4, 9, 30, 0.47), rgba(4, 9, 30, 0.437)), url("/img/tiles2.jpg");
   background-position: center;
   background-size: cover;
 }
