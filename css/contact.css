@@ -49,6 +49,10 @@
   line-height: 3rem;
   color: var(--red);
 }
+.contact .contact-flex .contact-side .contact-quote .contact-info a {
+  color: var(--white);
+  text-decoration: none;
+}
 .contact .contact-flex .contact-side .contact-quote .social-media a {
   padding: 1rem 1.2rem;
   font-size: var(--a);
@@ -90,7 +94,7 @@
 @media (max-width: 500px) {
   .contact .contact-flex {
     display: block;
-    padding: 3rem 10%;
+    padding: 1rem 1rem;
   }
   .contact .contact-flex .contact-form {
     text-align: center;
