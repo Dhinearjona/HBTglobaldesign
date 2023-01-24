@@ -62,6 +62,7 @@
   font-size: var(--p);
   text-transform: uppercase;
   font-weight: 800;
+  text-align: center;
 }
 .services .services-card .row .column .card img {
   width: 100%;

@@ -176,6 +176,7 @@ span {
   font-size: var(--p);
   text-transform: uppercase;
   font-weight: 800;
+  text-align: center;
 }
 .services .services-card .row .column .card img {
   width: 100%;
@@ -203,6 +204,12 @@ span {
 @media (max-width: 500px) {
   .services .services-card .row .column {
     flex-wrap: wrap;
+  }
+  .services .services-card .row .card .p1 {
+    display: none;
+  }
+  .services .services-card .row .card .h2 {
+    display: none;
   }
 }
 .quote {

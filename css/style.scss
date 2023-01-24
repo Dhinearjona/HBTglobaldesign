@@ -222,6 +222,7 @@ span {
                         font-size: var(--p);
                         text-transform: uppercase;
                         font-weight: 800;
+                        text-align: center;
                     }
                     
                     img {
@@ -264,6 +265,17 @@ span {
 
                 .column {
                     flex-wrap: wrap;
+                }
+
+                .card {
+
+                    .p1 {
+                        display: none;
+                    }
+
+                    .h2 {
+                        display: none;
+                    }
                 }
             }
         }
